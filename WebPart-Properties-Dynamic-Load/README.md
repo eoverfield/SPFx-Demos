@@ -26,7 +26,7 @@ src/webparts/demoWPDynamicProperties/ListService.ts
 
 ## What is of interest
 
-#src/webparts/demoWPDynamicProperties/IDemoWpDynamicPropertiesWebPartProps.ts
+###src/webparts/demoWPDynamicProperties/IDemoWpDynamicPropertiesWebPartProps.ts
 
 Added three new properties, in particular the ListName and ListColumn to store the selected list and column
 
