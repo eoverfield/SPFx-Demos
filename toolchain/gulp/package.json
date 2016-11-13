@@ -1,0 +1,19 @@
+{
+  "name": "gulp_demo",
+  "version": "0.0.1",
+  "description": "Demo - Gulp",
+  "private": true,
+  "author": "PixelMill Inc",
+  "license": "BSD-2-Clause",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "b96ff210-818a-4495-b88f-3f09ac17b0e6",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "b96ff210-818a-4495-b88f-3f09ac17b0e6",
+    "group": { "default": "Under Development" },
+    "title": { "default": "SharePointData" },
+    "description": { "default": "Demo to connect to SharePoint Data" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "SharePointData"
+    }
+  }]
+}
