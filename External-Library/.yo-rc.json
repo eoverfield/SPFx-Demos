@@ -1,0 +1,7 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "libraryName": "external-library",
+    "libraryId": "f9c60096-d0d2-423e-94ac-9603ba242c26",
+    "framework": "none"
+  }
+}

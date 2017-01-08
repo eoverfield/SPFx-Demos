@@ -11,17 +11,14 @@ import styles from './WebPartPropertiesDynamic.module.scss';
 import * as strings from 'webPartPropertiesDynamicStrings';
 import { IWebPartPropertiesDynamicWebPartProps } from './IWebPartPropertiesDynamicWebPartProps';
 
-/*
 //import in the ListService class we create
 import * as ListService from './ListService';
 
 //import Env type from sp-client-base to be able to determine env currently running in
 import { EnvironmentType, DisplayMode,  } from '@microsoft/sp-client-base';
-*/
 
 export default class WebPartPropertiesDynamicWebPart extends BaseClientSideWebPart<IWebPartPropertiesDynamicWebPartProps> {
 
-  /*
   //vars to hold a list of lists and a list of columns for a given list
   private _listOptions: IPropertyPaneDropdownOption[];
   private _columnOptions: IPropertyPaneDropdownOption[];
@@ -30,8 +27,12 @@ export default class WebPartPropertiesDynamicWebPart extends BaseClientSideWebPa
     super(context);
   }
 
-   //on the webpart initialization, process
+  //on the webpart initialization, process
   public onInit<T>(): Promise<T> {
+    console.log("OnInit");
+    console.log("context");
+    console.log(this.context);
+
     this._listOptions = [];
     this._columnOptions = [];
 
@@ -52,7 +53,6 @@ export default class WebPartPropertiesDynamicWebPart extends BaseClientSideWebPa
 
         resolve(undefined);
       });
-
     }
   }
 
@@ -71,8 +71,6 @@ export default class WebPartPropertiesDynamicWebPart extends BaseClientSideWebPa
     //and now complete normaly property change
     super.onPropertyChange(propertyPath, newValue);
   }
-
-  */
 
   public render(): void {
     this.domElement.innerHTML = `
@@ -164,7 +162,8 @@ export default class WebPartPropertiesDynamicWebPart extends BaseClientSideWebPa
             //we now have the columns, so kick off reload
             //based on suggestion: https://github.com/SharePoint/sp-dev-docs/wiki/Async-data-fetch-in-the-property-pane
             //note, bugs may exist as documented on GitHub
-            this.configureStart();
+            this.refreshPropertyPane();
+            //this.configureStart();
         });
       }
       else {

@@ -3,10 +3,10 @@
 import {
   IWebPartContext,
   IPropertyPaneDropdownOption
-} from '@microsoft/sp-client-preview';
+} from '@microsoft/sp-webpart-base';
 
 //import the HttpClient to make calls to SharePoint
-import { HttpClient } from '@microsoft/sp-client-base';
+import { HttpClient } from '@microsoft/sp-webpart-base';
 
 //create the exportable interface to different classes
 export interface IListsService {
