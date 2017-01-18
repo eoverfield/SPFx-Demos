@@ -1,14 +1,14 @@
 {
   "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
 
-  "id": "124b294f-8590-4317-88a9-b4f485aa1fe6",
+  "id": "c576bbab-f457-459e-80d9-815d8fab640b",
   "alias": "ExternalLibraryWebPart",
   "componentType": "WebPart",
   "version": "0.0.1",
   "manifestVersion": 2,
 
   "preconfiguredEntries": [{
-    "groupId": "124b294f-8590-4317-88a9-b4f485aa1fe6",
+    "groupId": "c576bbab-f457-459e-80d9-815d8fab640b",
     "group": { "default": "Under Development" },
     "title": { "default": "ExternalLibrary" },
     "description": { "default": "ExternalLibrary description" },

@@ -1,10 +1,10 @@
 {
   "solution": {
     "name": "external-library-client-side-solution",
-    "id": "f9c60096-d0d2-423e-94ac-9603ba242c26",
+    "id": "f49c6fc7-8512-49bc-bfe2-e849144ecb9b",
     "version": "1.0.0.0"
   },
   "paths": {
-    "zippedPackage": "solution/external-library.spapp"
+    "zippedPackage": "solution/external-library.sppkg"
   }
 }

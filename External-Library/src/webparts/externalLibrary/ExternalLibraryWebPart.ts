@@ -1,14 +1,17 @@
+import { Version } from '@microsoft/sp-core-library';
 import {
   BaseClientSideWebPart,
-  IPropertyPaneSettings,
-  IWebPartContext,
+  IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
+import { escape } from '@microsoft/sp-lodash-subset';
 
-//import * as $ from 'jquery'; //"import" would have worked if we included the jquery module.
+//import * as $ from 'jquery1'; //"import" would have worked if we included the jquery module.
+//import * as $ from 'jqueryCDN'; //"import" would have worked if we included the jquery module.
+//import $ from 'jquery';
 
 //instead we can "require" the external resource using the external "key" that references our external library source.
-const $: JQueryStatic = require('jqueryCDN');  
+const $: any = require('jqueryCDN');
 
 import styles from './ExternalLibrary.module.scss';
 import * as strings from 'externalLibraryStrings';
@@ -16,33 +19,38 @@ import { IExternalLibraryWebPartProps } from './IExternalLibraryWebPartProps';
 
 export default class ExternalLibraryWebPart extends BaseClientSideWebPart<IExternalLibraryWebPartProps> {
 
-  public constructor(context: IWebPartContext) {
-    super(context);
-  }
-
   public render(): void {
+
     this.domElement.innerHTML = `
-      <div class="${styles.externalLibrary}">
-        <div class="${styles.container}">
-          <div class="ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${styles.row}">
-            <div class="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <span class="ms-font-xl ms-fontColor-white">Welcome to SharePoint!</span>
-              <p class="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
-              <p class="ms-font-l ms-fontColor-white">${this.properties.description}</p>
-              <a href="https://github.com/SharePoint/sp-dev-docs/wiki" class="ms-Button ${styles.button}">
-                <span class="ms-Button-label">Learn more</span>
-              </a>
-            </div>
-          </div>
+      <div class="${styles.row}">
+        <div class="${styles.column}">
+          <span class="${styles.title}">
+            Welcome to SharePoint!
+          </span>
+          <p class="${styles.subtitle}">
+            Customize SharePoint experiences using Web Parts.
+          </p>
+          <p class="${styles.description}">
+            ${escape(this.properties.description)}
+          </p>
+          <a class="ms-Button ${styles.button}" href="https://github.com/SharePoint/sp-dev-docs/wiki">
+            <span class="ms-Button-label">
+              Learn more
+            </span>
+          </a>
         </div>
       </div>`;
 
       //we can now use our external resource as expected, in our case $ which equals jQuery.
-      $(this.domElement).children('DIV').append("<p>This paragraph was added by jQuery after the webpart container.<\p>");
-      $(this.domElement).find('.ms-Grid-col').append("<p>This paragraph was added by jQuery inline with content.<\p>");
+      $(this.domElement).children('DIV').append("<div>This paragraph was added by jQuery after the webpart container.<\div>");
+      $(this.domElement).find('DIV[class^="col"]').append("<p>This paragraph was added by jQuery inline with content.<\p>");
   }
 
-  protected get propertyPaneSettings(): IPropertyPaneSettings {
+  protected get dataVersion(): Version {
+    return Version.parse('1.0');
+  }
+
+  protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
     return {
       pages: [
         {
