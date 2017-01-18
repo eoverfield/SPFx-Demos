@@ -1,26 +1,23 @@
-## type-declaration
+## SPFx Demo - Add a type declaration reference
 
-This is where you include your web part docs.
+This demo is based off the SPFx RC0 Code Drop.
+
+In this demo, we are loading the jQuery library from a CDN, not from a module. @types/jquery is installed via npm and then imported in the webpart source.
+
+Updates include:
+Included @types/jquery
+Updated config/config.json by including the external reference for how to load our external component (in this case jQuery).
+
+Similar in scope to:
+https://dev.office.com/sharepoint/docs/spfx/web-parts/basics/add-an-external-library
 
 ### Building the code
 
 ```bash
 git clone the repo
-npm i
-npm i -g gulp
-gulp
+cd External-Library
+npm install
+gulp serve
 ```
 
-This package produces the following:
-
-* lib/* commonjs components - this allows this package to be reused from other packages.
-* dist/* - a single bundle containing the components used for uploading to a cdn pointing a registered Sharepoint webpart library to.
-* example/* a test page that hosts all components in this package.
-
 ### Build options
-
-gulp clean - TODO
-gulp test - TODO
-gulp watch - TODO
-gulp build - TODO
-gulp deploy - TODO
