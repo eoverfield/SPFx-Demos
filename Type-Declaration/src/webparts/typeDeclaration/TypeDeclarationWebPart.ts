@@ -6,21 +6,15 @@ import {
 } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-//import * as $ from 'jquery1'; //"import" would have worked if we included the jquery module.
-//import * as $ from 'jqueryCDN'; //"import" would have worked if we included the jquery module.
-//import * as $ from 'jquery';
+import * as $ from 'jquery';
 
-//instead we can "require" the external resource using the external "key" that references our external library source.
-const $: any = require('jqueryCDN');
+import styles from './TypeDeclaration.module.scss';
+import * as strings from 'typeDeclarationStrings';
+import { ITypeDeclarationWebPartProps } from './ITypeDeclarationWebPartProps';
 
-import styles from './ExternalLibrary.module.scss';
-import * as strings from 'externalLibraryStrings';
-import { IExternalLibraryWebPartProps } from './IExternalLibraryWebPartProps';
-
-export default class ExternalLibraryWebPart extends BaseClientSideWebPart<IExternalLibraryWebPartProps> {
+export default class TypeDeclarationWebPart extends BaseClientSideWebPart<ITypeDeclarationWebPartProps> {
 
   public render(): void {
-
     this.domElement.innerHTML = `
       <div class="${styles.row}">
         <div class="${styles.column}">
@@ -40,10 +34,6 @@ export default class ExternalLibraryWebPart extends BaseClientSideWebPart<IExter
           </a>
         </div>
       </div>`;
-
-      //we can now use our external resource as expected, in our case $ which equals jQuery.
-      $(this.domElement).children('DIV').append("<div>This paragraph was added by jQuery after the webpart container.<\div>");
-      $(this.domElement).find('DIV[class^="col"]').append("<p>This paragraph was added by jQuery inline with content.<\p>");
   }
 
   protected get dataVersion(): Version {

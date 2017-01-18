@@ -1,0 +1,15 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/typeDeclaration/TypeDeclarationWebPart.js",
+      "manifest": "./src/webparts/typeDeclaration/TypeDeclarationWebPart.manifest.json",
+      "outputPath": "./dist/type-declaration.bundle.js"
+    }
+  ],
+  "externals": {
+    "jquery": "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"
+  },
+  "localizedResources": {
+    "typeDeclarationStrings": "webparts/typeDeclaration/loc/{locale}.js"
+  }
+}
