@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/sharePointData/SharePointDataWebPart.js",
+      "manifest": "./src/webparts/sharePointData/SharePointDataWebPart.manifest.json",
+      "outputPath": "./dist/share-point-data.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/customProperties/CustomPropertiesWebPart.js",
+      "manifest": "./src/webparts/customProperties/CustomPropertiesWebPart.manifest.json",
+      "outputPath": "./dist/custom-properties.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/customPropertiesDynamic/CustomPropertiesDynamicWebPart.js",
+      "manifest": "./src/webparts/customPropertiesDynamic/CustomPropertiesDynamicWebPart.manifest.json",
+      "outputPath": "./dist/custom-properties-dynamic.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "sharePointDataStrings": "webparts/sharePointData/loc/{locale}.js",
+    "customPropertiesStrings": "webparts/customProperties/loc/{locale}.js",
+    "customPropertiesDynamicStrings": "webparts/customPropertiesDynamic/loc/{locale}.js"
+  }
+}

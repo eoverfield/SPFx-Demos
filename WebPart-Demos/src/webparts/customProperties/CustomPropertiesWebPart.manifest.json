@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "6528af49-cac2-4228-b501-3fb5722e8739",
+  "alias": "CustomPropertiesWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "6528af49-cac2-4228-b501-3fb5722e8739",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Custom Properties" },
+    "description": { "default": "Custom Properties description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "title": "Custom Properties",
+      "slider": 25
+    }
+  }]
+}

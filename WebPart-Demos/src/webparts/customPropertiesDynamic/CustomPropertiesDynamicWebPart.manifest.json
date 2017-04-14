@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "2e0e8e43-8397-4de9-a825-cbe01d2fb87e",
+  "alias": "CustomPropertiesDynamicWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "2e0e8e43-8397-4de9-a825-cbe01d2fb87e",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Custom Properties Dynamic" },
+    "description": { "default": "Custom Properties Dynamic description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "title": "",
+      "description": "Custom Properties Dynamic",
+      "listName": "",
+      "columnName": "",
+      "listKey": "",
+      "columnKey": ""
+    }
+  }]
+}

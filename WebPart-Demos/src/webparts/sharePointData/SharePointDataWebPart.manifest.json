@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "c75796e0-90d6-45ef-9064-a52fb5bf9082",
+  "alias": "SharePointDataWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "c75796e0-90d6-45ef-9064-a52fb5bf9082",
+    "group": { "default": "Under Development" },
+    "title": { "default": "SharePoint Data" },
+    "description": { "default": "SharePoint Data description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "SharePoint Data"
+    }
+  }]
+}
