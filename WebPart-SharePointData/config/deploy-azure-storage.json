@@ -1,6 +1,0 @@
-{
-  "workingDir": "./temp/deploy/",
-  "account": "<!-- STORAGE ACCOUNT NAME -->",
-  "container": "share-point-data",
-  "accessKey": "<!-- ACCESS KEY -->"
-}
