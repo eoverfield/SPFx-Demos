@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "react-web-part-demos-client-side-solution",
+    "id": "cdb6c388-2c17-4812-bb4c-9c625e026bfa",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/react-web-part-demos.sppkg"
+  }
+}
