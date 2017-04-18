@@ -2,7 +2,7 @@
 #https://"tenant".sharepoint.com/sites/spfx-demos 
 #https://"tenant".sharepoint.com/sites/spfx-demos/_layouts/15/workbench.aspx
 
-cd "E:\Datastore\Git Projects\GitHub\SPFxDemos\"
+cd "\Git Projects\GitHub\SPFxDemos\"
 #will open code during demo 1
 
 #Demo 1 - Demo: Developer Environment
