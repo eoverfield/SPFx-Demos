@@ -1,0 +1,11 @@
+{
+    "files": [
+        "src/interface-class.ts",
+    	"src/functions.ts",
+    	"src/namespacing.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "outFile": "output.js"
+    }
+}

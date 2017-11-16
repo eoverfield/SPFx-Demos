@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=1.6.915.0, Culture=neutral, PublicKeyToken=null" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-3231B31CFF0449948888AFFF43F57101">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-3231B31CFF0449948888AFFF43F57101" Version="1">
+      <pnp:Files>
+        <!--js-->
+        <pnp:File Folder="SiteAssets" Overwrite="true" Src="SiteAssets\bundle.js"></pnp:File>
+      </pnp:Files>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

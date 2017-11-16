@@ -1,0 +1,8 @@
+<script>
+    window.onload = function() {
+        if (typeof PnPDemo !== "undefined") {
+            PnPDemo.SiteData.init();
+        }
+    };
+</script>
+<div id="demo-pnp-example"></div>

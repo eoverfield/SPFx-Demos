@@ -1,0 +1,11 @@
+{
+    "files": [
+        "src/OurWebpart.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "outFile": "output.js",
+        //"module": "System", //SystemJS
+        "target": "es2015"
+    }
+}

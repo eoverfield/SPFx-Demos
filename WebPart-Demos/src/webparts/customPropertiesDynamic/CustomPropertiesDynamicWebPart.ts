@@ -8,7 +8,7 @@ import {
   IPropertyPaneDropdownOption	//add reference to drop down options
 
 } from '@microsoft/sp-webpart-base';
-import { escape } from '@microsoft/sp-lodash-subset';
+//import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './CustomPropertiesDynamic.module.scss';
 import * as strings from 'customPropertiesDynamicStrings';
@@ -20,8 +20,7 @@ import * as ListService from './ListService';
 //import Env type from sp-core-library to be able to determine env currently running in
 import {
   Environment,
-  EnvironmentType,
-  DisplayMode
+  EnvironmentType
 } from '@microsoft/sp-core-library';
 
 export default class CustomPropertiesDynamicWebPart extends BaseClientSideWebPart<ICustomPropertiesDynamicWebPartProps> {

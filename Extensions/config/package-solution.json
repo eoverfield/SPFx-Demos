@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "extensions-client-side-solution",
+    "id": "12ebd510-2ffc-4b25-bd11-404882b2cb38",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/extensions.sppkg"
+  }
+}

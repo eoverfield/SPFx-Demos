@@ -23,6 +23,7 @@ gulp.task("copy-html", function () {
         .pipe(gulp.dest("dist"));
 });
 
+/*
 var watchedBrowserify = watchify(browserify({
     basedir: '.',
     debug: true,
@@ -40,6 +41,7 @@ gulp.task("copy-html", function () {
     return gulp.src(paths.pages)
         .pipe(gulp.dest("dist"));
 });
+*/
 
 var bundle = function () {
     return watchedBrowserify

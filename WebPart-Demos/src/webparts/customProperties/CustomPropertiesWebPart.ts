@@ -4,7 +4,6 @@ import {
   IPropertyPaneConfiguration,
   PropertyPaneTextField,
 
-  /*
   PropertyPaneButton,
   PropertyPaneCheckbox,
   PropertyPaneChoiceGroup,
@@ -14,7 +13,6 @@ import {
   PropertyPaneLink,
   PropertyPaneSlider,
   PropertyPaneToggle
-  */
 } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
@@ -37,6 +35,9 @@ export default class CustomPropertiesWebPart extends BaseClientSideWebPart<ICust
                 <span class="${styles.label}">Learn more</span>
               </a>
 
+<p class="ms-font-l ms-fontColor-white">${this.properties.dropdown}</p>
+              <p class="ms-font-l ms-fontColor-white">${this.properties.slider}</p>
+
 
 
             </div>
@@ -44,10 +45,8 @@ export default class CustomPropertiesWebPart extends BaseClientSideWebPart<ICust
         </div>
       </div>`;
 
-      /*
-              <p class="ms-font-l ms-fontColor-white">${this.properties.dropdown}</p>
-              <p class="ms-font-l ms-fontColor-white">${this.properties.slider}</p>
-      */
+              
+    
   }
 
   protected get dataVersion(): Version {
@@ -58,7 +57,7 @@ export default class CustomPropertiesWebPart extends BaseClientSideWebPart<ICust
     return true;
   }
 
-  
+  /*
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
     return {
       pages: [
@@ -80,8 +79,8 @@ export default class CustomPropertiesWebPart extends BaseClientSideWebPart<ICust
       ]
     };
   }
+  */
   
-  /*
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
     return {
       pages: [
@@ -165,5 +164,4 @@ export default class CustomPropertiesWebPart extends BaseClientSideWebPart<ICust
       ]
     };
   }
-  */
 }

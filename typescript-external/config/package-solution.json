@@ -1,0 +1,11 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "typescript-external-client-side-solution",
+    "id": "14480078-5ff4-4550-8346-c57010174d69",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/typescript-external.sppkg"
+  }
+}

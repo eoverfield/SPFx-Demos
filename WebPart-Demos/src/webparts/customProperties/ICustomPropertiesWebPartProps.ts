@@ -1,6 +1,5 @@
 export interface ICustomPropertiesWebPartProps {
   title: string;
-  /*
   button: string;
   choiceGroup: string;
   dropdown: string;
@@ -8,5 +7,4 @@ export interface ICustomPropertiesWebPartProps {
   link: string;
   slider: string;
   toggle: string;
-  */
 }

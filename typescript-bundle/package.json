@@ -1,0 +1,18 @@
+{
+  "name": "typescript_basic_demo",
+  "version": "0.0.1",
+  "description": "TypesSript demo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PixelMill Inc",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.1.2",
+    "tsify": "^3.0.3",
+    "typescript": "^2.6.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

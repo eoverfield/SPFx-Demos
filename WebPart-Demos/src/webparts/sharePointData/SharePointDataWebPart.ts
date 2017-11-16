@@ -10,7 +10,6 @@ import styles from './SharePointData.module.scss';
 import * as strings from 'sharePointDataStrings';
 import { ISharePointDataWebPartProps } from './ISharePointDataWebPartProps';
 
-/*
 //import Env type from sp-core-library to be able to determine env currently running in
 import {
   Environment,
@@ -18,7 +17,6 @@ import {
 } from '@microsoft/sp-core-library';
 
 import * as ListService from './ListService';
-*/
 
 
 export default class SharePointDataWebPart extends BaseClientSideWebPart<ISharePointDataWebPartProps> {
@@ -39,7 +37,7 @@ export default class SharePointDataWebPart extends BaseClientSideWebPart<IShareP
         </div>
       </div>`;
 
-      //this._renderListAsync();
+      this._renderListAsync();
   }
 
   protected get dataVersion(): Version {
@@ -68,7 +66,6 @@ export default class SharePointDataWebPart extends BaseClientSideWebPart<IShareP
     };
   }
 
-  /*
   //determine what type of request to make, to either mock or sp rest api
   private _renderListAsync(): void {
     const dataService = (Environment.type === EnvironmentType.Test || Environment.type === EnvironmentType.Local) ?
@@ -95,5 +92,4 @@ export default class SharePointDataWebPart extends BaseClientSideWebPart<IShareP
     const listContainer: Element = this.domElement.querySelector('#spListContainer');
     listContainer.innerHTML = html;
   }
-  */
 }
