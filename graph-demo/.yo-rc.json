@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "graph-demo",
+    "libraryId": "f5fd9796-0905-4c5c-934d-f87f33718d5c",
+    "environment": "spo"
+  }
+}

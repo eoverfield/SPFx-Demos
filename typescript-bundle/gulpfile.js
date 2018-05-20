@@ -8,7 +8,6 @@ var tsify = require("tsify");
 
 var browserSync = require('browser-sync').create();
 
-
 gulp.task("default", function () {
 
     /*
@@ -20,7 +19,7 @@ gulp.task("default", function () {
 
     return tsResult.js.pipe(gulp.dest("dist"));
     */
-
+    
     //for browserify to work, need to provide files direct, tsify will load and use rest of tscongif.json though
     var tsBrowserify = browserify({
         basedir: '.',

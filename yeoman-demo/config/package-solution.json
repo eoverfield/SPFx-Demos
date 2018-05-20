@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "yeoman-demo-client-side-solution",
+    "id": "d87bd01a-c60f-49e7-a4b9-50b4a235fdd4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/yeoman-demo.sppkg"
+  }
+}

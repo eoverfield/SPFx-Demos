@@ -1,0 +1,26 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://localhost:5432/workbench",
+  "api": {
+    "port": 5432,
+    "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
+  },
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://localhost:5432/workbench"
+    },
+    "customHeaderFooter": {
+      "pageUrl": "https://pixelmilldev1.sharepoint.com/sites/devgroup/",
+      "customActions": {
+        "7e60d767-ce10-47c3-adfc-6d3a2d08537f": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "exteral-library-141-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/exteralLibrary141/ExteralLibrary141WebPart.js",
+          "manifest": "./src/webparts/exteralLibrary141/ExteralLibrary141WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+      //"jquery": "https://code.jquery.com/jquery-3.1.0.min.js"
+  },
+  "localizedResources": {
+    "ExteralLibrary141WebPartStrings": "lib/webparts/exteralLibrary141/loc/{locale}.js"
+  }
+}

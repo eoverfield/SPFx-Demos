@@ -2,7 +2,7 @@
 var gulp = require("gulp");
 var ts = require("gulp-typescript");
 
-//var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync').create();
 
 gulp.task("default", function () {
 
@@ -11,7 +11,6 @@ gulp.task("default", function () {
     var tsResult = tsProject.src()
         .pipe(tsProject());
 
-    /*
     gulp.src(['src/*.html'])
         .pipe(gulp.dest("dist"));
 
@@ -23,7 +22,6 @@ gulp.task("default", function () {
         },
         https: false
     });
-    */
-
+    
     return tsResult.js.pipe(gulp.dest("dist"));
 });

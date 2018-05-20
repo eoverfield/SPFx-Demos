@@ -1,0 +1,21 @@
+{
+  "name": "test-180516",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "build": "gulp bundle",
+    "clean": "gulp clean",
+    "test": "gulp test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@microsoft/generator-sharepoint": "^1.1.0"
+  },
+  "description": "This is where you include your WebPart documentation.",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC"
+}

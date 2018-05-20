@@ -1,8 +1,11 @@
 {
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "helloworld-client-side-solution",
-    "id": "552746f2-b3b8-42c3-9de8-039886d7302b",
-    "version": "1.0.0.0"
+    "id": "1ad6ff5e-c961-4948-8d2f-71fcaedc6ab0",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
   },
   "paths": {
     "zippedPackage": "solution/helloworld.sppkg"

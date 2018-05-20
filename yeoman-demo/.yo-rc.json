@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "yeoman-demo",
+    "libraryId": "d87bd01a-c60f-49e7-a4b9-50b4a235fdd4",
+    "environment": "spo"
+  }
+}

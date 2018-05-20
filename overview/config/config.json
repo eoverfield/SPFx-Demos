@@ -1,0 +1,27 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "react-youtube-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactYoutube/ReactYoutubeWebPart.js",
+          "manifest": "./src/webparts/reactYoutube/ReactYoutubeWebPart.manifest.json"
+        }
+      ]
+    },
+    "custom-header-footer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/customHeaderFooter/CustomHeaderFooterApplicationCustomizer.js",
+          "manifest": "./src/extensions/customHeaderFooter/CustomHeaderFooterApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReactYoutubeWebPartStrings": "lib/webparts/reactYoutube/loc/{locale}.js",
+    "CustomHeaderFooterApplicationCustomizerStrings": "lib/extensions/customHeaderFooter/loc/{locale}.js"
+  }
+}

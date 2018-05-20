@@ -1,10 +1,10 @@
-declare interface IHelloWorldStrings {
+declare interface IHelloWorldWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
 }
 
-declare module 'helloWorldStrings' {
-  const strings: IHelloWorldStrings;
+declare module 'HelloWorldWebPartStrings' {
+  const strings: IHelloWorldWebPartStrings;
   export = strings;
 }

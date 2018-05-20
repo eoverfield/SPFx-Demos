@@ -1,8 +1,11 @@
 {
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "helloworld-react-client-side-solution",
-    "id": "9c17aeab-26c4-4bdf-b3e6-b94d25288aaf",
-    "version": "1.0.0.0"
+    "id": "92e97cc2-47cc-4aab-a36f-11656fdb4c4d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
   },
   "paths": {
     "zippedPackage": "solution/helloworld-react.sppkg"
