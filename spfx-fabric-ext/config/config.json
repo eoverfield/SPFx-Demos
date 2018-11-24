@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "fabric-header-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/fabricHeader/FabricHeaderApplicationCustomizer.js",
+          "manifest": "./src/extensions/fabricHeader/FabricHeaderApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "fabric-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fabricDemo/FabricDemoWebPart.js",
+          "manifest": "./src/webparts/fabricDemo/FabricDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FabricHeaderApplicationCustomizerStrings": "lib/extensions/fabricHeader/loc/{locale}.js",
+    "FabricDemoWebPartStrings": "lib/webparts/fabricDemo/loc/{locale}.js"
+  }
+}
