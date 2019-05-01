@@ -10,7 +10,6 @@ var browserSync = require('browser-sync').create();
 
 gulp.task("default", function () {
 
-    /*
     //var tsProject = ts.createProject('tsconfig.json', {module: "System"});
     var tsProject = ts.createProject('tsconfig.json');
 
@@ -18,8 +17,10 @@ gulp.task("default", function () {
         .pipe(tsProject());
 
     return tsResult.js.pipe(gulp.dest("dist"));
-    */
-    
+
+
+
+    /*
     //for browserify to work, need to provide files direct, tsify will load and use rest of tscongif.json though
     var tsBrowserify = browserify({
         basedir: '.',
@@ -44,6 +45,7 @@ gulp.task("default", function () {
         },
         https: false
     });
+    */
 
     
 });

@@ -11,10 +11,12 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import styles from './HelloWorldWebPart.module.scss';
 import * as strings from 'HelloWorldWebPartStrings';
 
+/*
 //add imports
 import * as jQuery from 'jquery';
 import 'jqueryui';
 import { SPComponentLoader } from '@microsoft/sp-loader';
+*/
 
 export interface IHelloWorldWebPartProps {
   description: string;
@@ -24,14 +26,15 @@ export default class HelloWorldWebPartWebPart extends BaseClientSideWebPart<IHel
   public constructor() {
     super();
 
-    SPComponentLoader.loadCss('//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css');
+    //SPComponentLoader.loadCss('//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css');
   }
 
   public render(): void {
     this.domElement.innerHTML = `
       <div id="tabs">Hello world content
       </div>`;
-    
+
+    /*
     const tabOptions: JQueryUI.TabsOptions = {
       collapsible: true
     };
@@ -63,6 +66,7 @@ export default class HelloWorldWebPartWebPart extends BaseClientSideWebPart<IHel
         tabs.tabs( "refresh" );
       }
     });
+    */
   }
 
   protected get dataVersion(): Version {

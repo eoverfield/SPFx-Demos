@@ -5,7 +5,7 @@
     "compilerOptions": {
         "noImplicitAny": true,
         "outFile": "output.js",
-        //"module": "System" //SystemJS
+        //"module": "System", //SystemJS
         "target": "es2015"
     }
 }

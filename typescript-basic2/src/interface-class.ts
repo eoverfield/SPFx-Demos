@@ -25,3 +25,21 @@ let listService: MockListsService = new MockListsService();
 console.log(listService.getListNames()); // string array: [“list 1”, “list 2”]
 console.log(listService.getListColumnNames("two")); //string array [“column 3”, “column 4”]
 console.log();
+
+
+
+
+
+
+
+/*
+let listService2: MockListsService;
+listService2 = {
+	getListNames: () : string[] => {
+		return [""];
+	},
+	getListColumnNames: (listId) : string[] => {
+		return [""];
+	}
+}
+*/
