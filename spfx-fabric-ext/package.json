@@ -18,7 +18,7 @@
     "@microsoft/sp-dialog": "1.7.0",
     "@microsoft/sp-application-base": "1.7.0",
     "react": "16.3.2",
-    "react-dom": "16.3.2",
+    "react-dom": "16.3.3",
     "@types/react": "16.4.2",
     "@types/react-dom": "16.0.5",
     "@microsoft/sp-webpart-base": "1.7.0",
