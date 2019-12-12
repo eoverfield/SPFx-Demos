@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "type-script-external-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/typeScriptExternalDemo/TypeScriptExternalDemoWebPart.js",
+          "manifest": "./src/webparts/typeScriptExternalDemo/TypeScriptExternalDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery":"node_modules/jquery/dist/jquery.min.js",
+    "jqueryui":"node_modules/jqueryui/jquery-ui.min.js"
+  },
+  "localizedResources": {
+    "TypeScriptExternalDemoWebPartStrings": "lib/webparts/typeScriptExternalDemo/loc/{locale}.js"
+  }
+}
